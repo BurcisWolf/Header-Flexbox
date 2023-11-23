@@ -9,7 +9,8 @@
 header {
     font-family: 'Montserrat', sans-serif;
     display: flex; 
-    justify-content: space-between; /* vertical position */
+    /* justify-content: space-between; /* vertical position , makes spaces between */
+    justify-content: flex-end; /* vertical position, pushes everything on the end of flexbox */
     align-items: center; /* horizontal position */
     padding: 20px 10%; 
 }
@@ -21,6 +22,7 @@ header a, button, li {
 }
 .img-logo {
     cursor: pointer;
+    margin-right: auto; /* pushes the element to the left */
     width: 30px;
 }
 
@@ -39,6 +41,7 @@ header a, button, li {
 
 button {
     cursor: pointer; /* when we hover over the element its gets different cursor */
+    margin-left: 20px;
     padding: 7px 25px;
     border: none;
     background-color: #006d88;
