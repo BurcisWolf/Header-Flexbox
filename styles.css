@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); /* linking fonts to our document */
 
 * {
     box-sizing: border-box;
@@ -8,10 +8,10 @@
 }
 header {
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
+    display: flex; 
+    justify-content: space-between; /* vertical position */
+    align-items: center; /* horizontal position */
+    padding: 20px 10%; 
 }
 header a, button, li {
     font-weight: 500;
@@ -20,5 +20,32 @@ header a, button, li {
     text-decoration: none;
 }
 .img-logo {
+    cursor: pointer;
     width: 30px;
+}
+
+.list li {
+    display: inline-block; /* displays stuff in one line , not a block element anymore */
+    padding: 0px 20px;
+}
+
+.list li a {
+    transition: all 0.4s ease 0s;
+}
+
+.list li a:hover {
+    color: #0088a9;
+}
+
+button {
+    cursor: pointer; /* when we hover over the element its gets different cursor */
+    padding: 7px 25px;
+    border: none;
+    background-color: #006d88;
+    border-radius: 50px;
+    transition: all 0.4s ease 0s;
+}
+
+button:hover {
+    background-color: #003f4e;
 }
